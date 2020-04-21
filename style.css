@@ -5,10 +5,9 @@ body {
 }
 
 
-
-
-
-
+.fixed-action-btn{
+      bottom: calc(12% - 40px);
+}
 
 #vid_container {
   position: fixed;
