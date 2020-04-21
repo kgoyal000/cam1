@@ -95,7 +95,7 @@ function initCameraUI() {
   }
 
   // -- switch camera part
-  if (amountOfCameras > 1) {
+  if (true) {
     switchCameraButton.style.display = 'block';
 
     switchCameraButton.addEventListener('click', function() {
