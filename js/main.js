@@ -7,15 +7,15 @@ var switchCameraButton;
 var amountOfCameras = 0;
 var currentFacingMode = 'user';
 
-document.addEventListener('DOMContentLoaded', function(event) {
+// document.addEventListener('DOMContentLoaded', function(event) {
   // do some WebRTC checks before creating the interface
-  DetectRTC.load(function() {
+//   DetectRTC.load(function() {
     // do some checks
    
-        amountOfCameras = DetectRTC.videoInputDevices.length;
+//         amountOfCameras = DetectRTC.videoInputDevices.length;
 
-        initCameraUI();
-        initCameraStream();
+//         initCameraUI();
+//         initCameraStream();
     
 //     console.log(
 //       'RTC Debug info: ' +
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //         '\n is Mobile Device:     ' +
 //         DetectRTC.isMobileDevice,
 //     );
-  });
-});
+//   });
+// });
 
 function initCameraUI() {
   video = document.getElementById('video');
