@@ -6,7 +6,11 @@
   <meta name="keywords" content="HTML,CSS,JavaScript, WebRTC, Camera">
   <meta name="author" content="Kasper Kamperman">
   <title>Mobile First Camera Template</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
   <div id="container">
@@ -20,10 +24,24 @@
         <button id="toggleFullScreenButton" name="toggle FullScreen" type="button" aria-pressed="false"></button>
     </div>
   </div> 
+    <div id="float" class="fixed-action-btn" onclick="myFunction()">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <!-- <li><a id="toggleFullScreenButton" class="btn-floating red" name="toggle FullScreen" type="button" aria-pressed="false"><i class="material-icons">aspect_ratio</i></a></li> -->
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  
+
   <script src="js/DetectRTC.min.js"></script>
   <script src="js/adapter.min.js"></script>  
   <script src="js/screenfull.min.js"></script>
   <script src="js/howler.core.min.js"></script>
   <script src="js/main.js"></script>
+  
 </body>
 </html>
