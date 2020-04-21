@@ -1,10 +1,3 @@
-/*
-
->> kasperkamperman.com - 2018-04-18
->> https://www.kasperkamperman.com/blog/camera-template/
-
-*/
-
 var takeSnapshotUI = createClickFeedbackUI();
 
 var video;
