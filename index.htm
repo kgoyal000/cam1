@@ -41,6 +41,12 @@
   <script src="js/screenfull.min.js"></script>
   <script src="js/howler.core.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+  });
+    </script>
     
 
 </body>
