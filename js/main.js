@@ -7,43 +7,43 @@ var switchCameraButton;
 var amountOfCameras = 0;
 var currentFacingMode = 'environment';
 
-// document.addEventListener('DOMContentLoaded', function(event) {
-  // do some WebRTC checks before creating the interface
-//   DetectRTC.load(function() {
-    // do some checks
+document.addEventListener('DOMContentLoaded', function(event) {
+  do some WebRTC checks before creating the interface
+  DetectRTC.load(function() {
+    do some checks
    
-//         amountOfCameras = DetectRTC.videoInputDevices.length;
+        amountOfCameras = DetectRTC.videoInputDevices.length;
 
-//         initCameraUI();
-//         initCameraStream();
+        initCameraUI();
+        initCameraStream();
     
-//     console.log(
-//       'RTC Debug info: ' +
-//         '\n OS:                   ' +
-//         DetectRTC.osName +
-//         ' ' +
-//         DetectRTC.osVersion +
-//         '\n browser:              ' +
-//         DetectRTC.browser.fullVersion +
-//         ' ' +
-//         DetectRTC.browser.name +
-//         '\n is Mobile Device:     ' +
-//         DetectRTC.isMobileDevice +
-//         '\n has webcam:           ' +
-//         DetectRTC.hasWebcam +
-//         '\n has permission:       ' +
-//         DetectRTC.isWebsiteHasWebcamPermission +
-//         '\n getUserMedia Support: ' +
-//         DetectRTC.isGetUserMediaSupported +
-//         '\n isWebRTC Supported:   ' +
-//         DetectRTC.isWebRTCSupported +
-//         '\n WebAudio Supported:   ' +
-//         DetectRTC.isAudioContextSupported +
-//         '\n is Mobile Device:     ' +
-//         DetectRTC.isMobileDevice,
-//     );
-//   });
-// });
+    console.log(
+      'RTC Debug info: ' +
+        '\n OS:                   ' +
+        DetectRTC.osName +
+        ' ' +
+        DetectRTC.osVersion +
+        '\n browser:              ' +
+        DetectRTC.browser.fullVersion +
+        ' ' +
+        DetectRTC.browser.name +
+        '\n is Mobile Device:     ' +
+        DetectRTC.isMobileDevice +
+        '\n has webcam:           ' +
+        DetectRTC.hasWebcam +
+        '\n has permission:       ' +
+        DetectRTC.isWebsiteHasWebcamPermission +
+        '\n getUserMedia Support: ' +
+        DetectRTC.isGetUserMediaSupported +
+        '\n isWebRTC Supported:   ' +
+        DetectRTC.isWebRTCSupported +
+        '\n WebAudio Supported:   ' +
+        DetectRTC.isAudioContextSupported +
+        '\n is Mobile Device:     ' +
+        DetectRTC.isMobileDevice,
+    );
+  });
+});
 
 function initCameraUI() {
   video = document.getElementById('video');
