@@ -1,5 +1,4 @@
 var takeSnapshotUI = createClickFeedbackUI();
-
 var video;
 var takePhotoButton;
 var toggleFullScreenButton;
@@ -54,6 +53,7 @@ function initCameraUI() {
 
   takePhotoButton = document.getElementById('takePhotoButton');
   toggleFullScreenButton = document.getElementById('toggleFullScreenButton');
+  
   switchCameraButton = document.getElementById('switchCameraButton');
 
   // https://developer.mozilla.org/nl/docs/Web/HTML/Element/button
@@ -180,6 +180,19 @@ function initCameraStream() {
     }
 
     const track = window.stream.getVideoTracks()[0];
+      const imageCapture = new ImageCapture(track)
+      const photoCapabilities = imageCapture.getPhotoCapabilities().then(() => {
+
+        //todo: check if camera has a torch
+
+        //let there be light!
+        const btn = document.querySelector('#flash');
+        btn.addEventListener('click', function(){
+          track.applyConstraints({
+            advanced: [{torch: true}]
+          });
+        });
+    });
     const settings = track.getSettings();
     str = JSON.stringify(settings, null, 4);
     console.log('settings ' + str);
